@@ -1,0 +1,51 @@
+body {
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+.row {
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #6c63ff, #bd4eff, rgb(65, 188, 229));
+  animation: gradientAnimation 10s linear infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+nav ul {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  border-radius: 5px;
+  background-color: #46107657;
+  color: rgb(48, 19, 35);
+}
+
+nav ul li a {
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+.para {
+
+}
