@@ -70,6 +70,8 @@ nav ul li a {
   position: relative;
   z-index: 1;
   animation: ab 6s  linear infinite;
+  max-width: 50%; 
+  height: auto; 
 }
 @keyframes ab {
   from {
@@ -102,9 +104,19 @@ border-radius: 10px;
   margin: 10px;
   flex: 1;
 }
-#me{
-  position:absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
+.about .fixed-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.about .image-container {
+  position: relative;
+}
+
+.about .animated-image {
+  position: relative;
+  z-index: -1;
+  animation: ab 10s linear infinite;
 }
