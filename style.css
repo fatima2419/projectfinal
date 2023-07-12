@@ -36,14 +36,15 @@ body {
   margin-bottom: 100px;
 }
 nav ul {
+  list-style-type: none;
   text-align: left;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 nav li {
   padding: 10px;
-  display: inline-block;
 }
 
 nav a:hover {
@@ -88,13 +89,17 @@ nav ul li a {
   justify-content: center;
   height: 120%;
   width: 100%;
-  border-color:#d5b723;
+  border-color:#ab23d554;
   border-style: ridge;
   display: flex;
 border-radius: 10px;
 
 }
-.write>h2{
+.write{
+  position: relative;
+  left: 44px;
+}
+.write>h3{
   color: #d5b723;
 }
 .write>h1{
@@ -106,9 +111,7 @@ border-radius: 10px;
 }
 .about .fixed-image {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-10%,-20%);
   
 }
 .about .image-container {
@@ -117,6 +120,104 @@ border-radius: 10px;
 
 .about .animated-image {
   position: relative;
+  left: -17%;
   z-index: -1;
   animation: ab 10s linear infinite;
 }
+.skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ margin-left: 10px;
+ margin-top: 10px;
+  
+}
+.all{
+  border-radius: 10px;
+  background-color: #46107657;
+  padding: 30px;
+  margin: 10px;
+}
+h2{
+  text-align: center;
+  color: #4610769d;
+  font-size: 3em;
+}
+.all:nth-child(1),.all:nth-child(3){
+  transform: translatey(20%);
+}
+@media (max-width: 500px) {
+  .skills {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    max-width: 100%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body{
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+ .skills{flex-direction: column;
+    align-items: center;
+   width: 100vw;
+
+}
+.all:nth-child(1),.all:nth-child(3){
+  transform: translatey(0%);
+}
+}
+
+h2{
+  margin-top: 60px;
+  font-size: 3em;
+}
+.c1{
+ 
+  border-color:#ab23d554;
+  border-style: ridge;
+  display: flex;
+ margin-top: 10px;
+ margin-left: 25px;
+}
+
+.CV{
+  margin-top: 20px;
+  background-color: #914caf;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.CV:hover {
+  background-color: #d99fdf}
+  .info:hover{
+    background-color: #c099e257;
+  }
+
+
+
