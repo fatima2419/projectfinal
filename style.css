@@ -1,28 +1,39 @@
 body {
-  font-family: "Cairo", sans-serif;
   overflow-x: hidden;
 }
+.container {
+  margin: 0;
+}
 .row {
-  position:fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #6c63ff, #bd4eff, rgb(65, 188, 229));
-  animation: gradientAnimation 10s linear infinite;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s alternate infinite;
 }
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 100%;
   height: auto;
+  margin-bottom: 100px;
 }
 nav ul {
   text-align: left;
@@ -46,6 +57,54 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-.para {
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+  
+.about>img{
+  position: relative;
+  z-index: 1;
+  animation: ab 6s  linear infinite;
+}
+@keyframes ab {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  
+}
+}
+.info {
+  font-size: medium;
+  align-items: center;
+  justify-content: center;
+  height: 120%;
+  width: 100%;
+  border-color:#d5b723;
+  border-style: ridge;
+  display: flex;
+border-radius: 10px;
 
+}
+.write>h2{
+  color: #d5b723;
+}
+.write>h1{
+  color: #5f2b7d;
+}
+.info > div {
+  margin: 10px;
+  flex: 1;
+}
+#me{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
