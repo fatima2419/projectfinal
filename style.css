@@ -67,14 +67,6 @@ nav ul li a {
   padding-top: 20px;
   padding-left: 50px;
 }
-
-.about > img {
-  position: relative;
-  z-index: 1;
-  animation: ab 6s linear infinite;
-  max-width: 50%;
-  height: auto;
-}
 @keyframes ab {
   from {
     transform: rotate(0deg);
@@ -154,10 +146,19 @@ h2 {
   }
 }
 @media only screen and (max-width: 900px) {
- .
+ .about{
+  flex-direction: column;
+  max-width: 90%;
+ }
+ .info{
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+ }
   .forma{ margin: 0%;
   background-color: #23a6d5;}
   body{
+    overflow-x:hidden ;
     margin: 0%;
     padding: 0%;
   }
