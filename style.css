@@ -12,19 +12,19 @@ body {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s alternate infinite;
+  background-size: 400% 400%;
+  animation: gradient 15s alternate infinite;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .logo {
@@ -58,7 +58,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-.about{
+.about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,13 +66,13 @@ nav ul li a {
   padding-top: 20px;
   padding-left: 50px;
 }
-  
-.about>img{
+
+.about > img {
   position: relative;
   z-index: 1;
-  animation: ab 6s  linear infinite;
-  max-width: 50%; 
-  height: auto; 
+  animation: ab 6s linear infinite;
+  max-width: 50%;
+  height: auto;
 }
 @keyframes ab {
   from {
@@ -80,8 +80,7 @@ nav ul li a {
   }
   to {
     transform: rotate(360deg);
-  
-}
+  }
 }
 .info {
   font-size: medium;
@@ -89,20 +88,19 @@ nav ul li a {
   justify-content: center;
   height: 120%;
   width: 100%;
-  border-color:#ab23d554;
+  border-color: #ab23d554;
   border-style: ridge;
   display: flex;
-border-radius: 10px;
-
+  border-radius: 10px;
 }
-.write{
+.write {
   position: relative;
   left: 44px;
 }
-.write>h3{
+.write > h3 {
   color: #d5b723;
 }
-.write>h1{
+.write > h1 {
   color: #5f2b7d;
 }
 .info > div {
@@ -111,8 +109,7 @@ border-radius: 10px;
 }
 .about .fixed-image {
   position: absolute;
-  transform: translate(-10%,-20%);
-  
+  transform: translate(-10%, -20%);
 }
 .about .image-container {
   position: relative;
@@ -124,46 +121,50 @@ border-radius: 10px;
   z-index: -1;
   animation: ab 10s linear infinite;
 }
-.skills{
+.skills {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
- margin-left: 10px;
- margin-top: 10px;
-  
+  margin-left: 10px;
+  margin-top: 10px;
 }
-.all{
+.all {
   border-radius: 10px;
   background-color: #46107657;
   padding: 30px;
   margin: 10px;
 }
-h2{
+h2 {
   text-align: center;
   color: #4610769d;
   font-size: 3em;
 }
-.all:nth-child(1),.all:nth-child(3){
+.all:nth-child(1),
+.all:nth-child(3) {
   transform: translatey(20%);
 }
 @media (max-width: 500px) {
   .skills {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 900px) {
+  body{
+    margin: 0%;
+    padding: 0%;
+  }
   .container {
-    max-width: 100%;
+    width: 100%;
+    margin: 0%;
   }
   * {
     box-sizing: border-box;
   }
-  body{
-  }
+
   nav ul {
     flex-direction: column;
   }
@@ -173,36 +174,35 @@ h2{
     margin-bottom: 10px;
   }
 
-  .logo{
+  .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
   }
- .skills{flex-direction: column;
+  .skills {
+    flex-direction: column;
     align-items: center;
-   width: 100vw;
+    width: 100vw;
+  }
+  .all:nth-child(1),
+  .all:nth-child(3) {
+    transform: translatey(0%);
+  }
+}
 
-}
-.all:nth-child(1),.all:nth-child(3){
-  transform: translatey(0%);
-}
-}
-
-h2{
+h2 {
   margin-top: 60px;
   font-size: 3em;
 }
-.c1{
- 
-  border-color:#ab23d554;
-  border-style: ridge;
-  display: flex;
- margin-top: 10px;
- margin-left: 25px;
+.c1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.CV{
+.CV {
   margin-top: 20px;
   background-color: #914caf;
   color: white;
@@ -214,10 +214,18 @@ h2{
 }
 
 .CV:hover {
-  background-color: #d99fdf}
-  .info:hover{
-    background-color: #c099e257;
-  }
+  background-color: #d99fdf;
+}
+.info:hover {
+  background-color: #c099e257;
+}
 
-
-
+.gallary > img {
+  margin-left: 25px;
+  flex-wrap: wrap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+}
