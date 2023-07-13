@@ -54,6 +54,7 @@ nav a:hover {
 }
 
 nav ul li a {
+  
   margin-bottom: 20px;
   color: white;
   text-decoration: none;
@@ -153,6 +154,9 @@ h2 {
   }
 }
 @media only screen and (max-width: 900px) {
+ .
+  .forma{ margin: 0%;
+  background-color: #23a6d5;}
   body{
     margin: 0%;
     padding: 0%;
@@ -227,5 +231,60 @@ h2 {
 body {
   margin: 0;
   padding: 0;
-  padding-bottom: 100px;
+}
+footer {
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s alternate infinite;
+  background-color: #46107657;
+  display: flex;
+  justify-content: center;
+} 
+.social-icons{
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.gallary.col-6-sm{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5px;
+  display: flex;
+}
+.c3{
+  transform: translateX(-25%);
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #5d04aa84;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #7f3fc3;
+}
+
+.forma {
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s alternate infinite;
+transform: translateX(50%);
+  width: 50%;
+  border-radius: 2px;
+  padding: 20px;
 }
