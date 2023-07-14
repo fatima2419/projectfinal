@@ -162,7 +162,8 @@ h2 {
   }
  .about{
   flex-direction: column;
-  max-width: 90%;
+  max-width: 100%;
+  transform: translateX(-10%);
  }
   body {
     margin: 0;
@@ -172,7 +173,6 @@ h2 {
   .container {
     width: 100%;
     max-width: 100%;
-    padding: 0 20px;
     box-sizing: content-box;
   }
   * {
@@ -187,6 +187,7 @@ text-align: left;
 z-index: 3;
 }
   nav ul {
+    
     overflow-x: hidden;
       flex-direction: column; 
      
