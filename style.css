@@ -4,7 +4,9 @@ body {
 .container {
   margin: 0 auto;
   max-width: 100%;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  justify-content: center;
+  align-content: center;
 }
 
 .row {
@@ -37,13 +39,16 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 100px;
+margin-left: 25%;
 }
+
 nav ul {
   list-style-type: none;
   text-align: left;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 
 nav li {
@@ -107,12 +112,12 @@ margin-left:5%;
   animation: ab 10s linear infinite;
 }
 .skills {
-  display: flex;
+display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-left: 10px;
   margin-top: 10px;
+  width: 95%;
 }
 .all {
   border-radius: 10px;
@@ -129,15 +134,23 @@ h2 {
 .all:nth-child(3) {
   transform: translatey(20%);
 }
-@media (max-width: 900px) {
-  .skills {
-    display: flex;
-    width: 90%;
+@media (max-width: 600px) {
+  .clints{
     flex-direction: column;
-    align-items: center;
+  }
+  
+  .logo{
+    margin-right: 15%;
   }
 }
 @media only screen and (max-width: 900px) {
+  html{
+    overflow-x: hidden !important;
+  }
+  .form-container{
+    margin: 0%;
+    transform: translateX(-30%);
+  }
   .card{
     display: block;
   }
@@ -145,41 +158,52 @@ h2 {
   flex-direction: column;
   max-width: 90%;
  }
-
-  .forma{ margin: 0%;
-  background-color: #23a6d5;}
   body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
   }
   .container {
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     padding: 0 20px;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
   * {
     box-sizing: border-box;
   }
 nav{
   position: fixed;
+  margin: 0%;
+padding: 0%;
 }
   nav ul {
-    
-    flex-direction: column;
-  }
+    overflow-x: hidden;
+      flex-direction: column; /* Display the navigation items vertically on smaller screens */
+      align-items: left; /* Center the navigation items vertically */
+    }
+
 
   nav li {
     margin-right: 0;
     margin-bottom: 10px;
   }
+  .logo{
+    margin-left: 0%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
 
-  .logo {
+  }
+
+  .logo.col-sm {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
+    max-width: 100%;
+  
   }
   .skills {
     flex-direction: column;
@@ -233,41 +257,6 @@ footer {
   text-align: center;
 } 
 
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-input[type=submit] {
-  background-color: #5d04aa84;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #7f3fc3;
-}
-
-.forma {
-  margin-bottom: 20px;
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s alternate infinite;
-transform: translateX(50%);
-  width: 50%;
-  border-radius: 10px;
-  padding: 20px;
-}
-
 .card {
   align-items: center;
   text-align: center;
@@ -297,4 +286,45 @@ transform: translateX(50%);
 }
 .card.c2>img{
 width: 80%;
+}
+
+.form-container {
+  margin-bottom: 3%;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s alternate infinite;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 30%;
+}
+
+.form-container label,
+.form-container input[type="text"],
+.form-container textarea {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="submit"] {
+  background-color: #8b61a5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
