@@ -273,6 +273,7 @@ footer {
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05);
 }
 
 .container1 {
@@ -290,9 +291,6 @@ footer {
 .card.col-sm-6>img{
   border-radius: 10px;
   margin: 10px;
-}
-.card.c2>img{
-width: 80%;
 }
 
 .form-container {
@@ -318,7 +316,7 @@ width: 80%;
   margin-bottom: 10px;
 }
 
-.submit-butto {
+.form-container input[type="submit"] {
   background-color: #8b61a5;
   color: white;
   padding: 10px 20px;
@@ -360,12 +358,10 @@ width: 80%;
     margin-bottom: 10px;
   }
 }
-In the example above, a media query is added for a maximum width of 600px, which targets smaller screen sizes like mobile devices. Within the media query, the form container, input fields, and submit button are adjusted to be full width and have appropriate margins and paddings.
 
-By adding this CSS code, your form will become responsive and adapt to different screen sizes, making it more user-friendly on devices with smaller screens like smartphones.
-
-
-
-
-
-
+.all{
+  transition: transform 0.3s ease;}
+  .all:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
