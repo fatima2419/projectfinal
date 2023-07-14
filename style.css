@@ -1,19 +1,27 @@
+*{
+  font-family: 'Cairo', sans-serif;;
+}
 body {
   overflow-x: hidden;
 }
 .container {
-  margin: 0 auto;
   max-width: 100%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   justify-content: center;
   align-content: center;
 }
-
+nav{
+position: absolute;
+  top: 0;
+  left: 0;}
 .row {
-  position: relative;
+position: relative;
   top: 0;
   left: 0;
   right: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -38,17 +46,14 @@ body {
   align-items: center;
   max-width: 100%;
   height: auto;
-  margin-bottom: 100px;
-margin-left: 25%;
 }
 
 nav ul {
   list-style-type: none;
-  text-align: left;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 nav li {
@@ -62,7 +67,6 @@ nav a:hover {
 }
 
 nav ul li a {
-  
   margin-bottom: 20px;
   color: white;
   text-decoration: none;
@@ -86,8 +90,7 @@ nav ul li a {
 }
 
 .write {
-margin-left:5%;
- 
+ transform: translateX(5%);
 }
 .write > h3 {
   color: #d5b723;
@@ -117,13 +120,14 @@ display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 10px;
-  width: 95%;
+  width: 100%;
+  padding: 2%;
 }
 .all {
   border-radius: 10px;
   background-color: #46107657;
   padding: 30px;
-  margin: 10px;
+  margin: 5px;
 }
 h2 {
   text-align: center;
@@ -134,22 +138,24 @@ h2 {
 .all:nth-child(3) {
   transform: translatey(20%);
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+ 
+  html{
+    overflow-x: hidden !important;
+  }
   .clints{
+    width: 100%;
     flex-direction: column;
   }
   
   .logo{
-    margin-right: 15%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  html{
-    overflow-x: hidden !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .form-container{
     margin: 0%;
-    transform: translateX(-30%);
+    transform: translateX(-10%);
   }
   .card{
     display: block;
@@ -176,25 +182,19 @@ nav{
   position: fixed;
   margin: 0%;
 padding: 0%;
+align-items: left; 
+text-align: left;
 }
   nav ul {
     overflow-x: hidden;
-      flex-direction: column; /* Display the navigation items vertically on smaller screens */
-      align-items: left; /* Center the navigation items vertically */
+      flex-direction: column; 
+     
     }
 
 
   nav li {
     margin-right: 0;
     margin-bottom: 10px;
-  }
-  .logo{
-    margin-left: 0%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0%;
-
   }
 
   .logo.col-sm {
@@ -208,12 +208,23 @@ padding: 0%;
   .skills {
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
   }
   .all:nth-child(1),
   .all:nth-child(3) {
     transform: translatey(0%);
   }
+  .form-container {
+    margin-bottom: 3%;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+  }
+  
 }
 
 h2 {
@@ -235,13 +246,7 @@ h2 {
 .CV:hover {
   background-color: #d99fdf;
 }
-.info:hover {
-  background-color: #c099e257;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
+
 footer {
   background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -301,12 +306,12 @@ width: 80%;
   align-items: center;
   text-align: center;
   margin-left: 30%;
+  display: flex;
 }
 
 .form-container label,
 .form-container input[type="text"],
 .form-container textarea {
-  display: flex;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -322,9 +327,43 @@ width: 80%;
 .form-container input[type="text"],
 .form-container input[type="email"],
 .form-container textarea {
-  display: flex;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+@media only screen and (max-width: 1000px) {
+  .form-container {
+    margin-left: 10%;
+    padding: 10px;
+    justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  }
+  .myh{
+    transform: translateY(25%);
+  }
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+}
+In the example above, a media query is added for a maximum width of 600px, which targets smaller screen sizes like mobile devices. Within the media query, the form container, input fields, and submit button are adjusted to be full width and have appropriate margins and paddings.
+
+By adding this CSS code, your form will become responsive and adapt to different screen sizes, making it more user-friendly on devices with smaller screens like smartphones.
+
+
+
+
+
+
