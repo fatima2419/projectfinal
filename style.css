@@ -184,6 +184,7 @@ nav{
 padding: 0%;
 align-items: left; 
 text-align: left;
+z-index: 3;
 }
   nav ul {
     overflow-x: hidden;
@@ -316,7 +317,7 @@ width: 80%;
   margin-bottom: 10px;
 }
 
-.form-container input[type="submit"] {
+.submit-butto {
   background-color: #8b61a5;
   color: white;
   padding: 10px 20px;
