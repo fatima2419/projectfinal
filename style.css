@@ -250,9 +250,8 @@ h2 {
 }
 
 footer {
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #ba23d5);
   background-size: 400% 400%;
-  animation: gradient 15s alternate infinite;
   background-color: #46107657;
   display: flex;
   justify-content: center;
@@ -265,6 +264,7 @@ footer {
 } 
 
 .card {
+  background-color:#7126b214;
   align-items: center;
   text-align: center;
   margin: 10px;
@@ -300,7 +300,6 @@ footer {
   padding: 20px;
   background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s alternate infinite;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
